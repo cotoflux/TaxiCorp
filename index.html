@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxicorp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <style>
+        .parent {
+        display: grid;
+        place-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../view/images/taxicorp-logo.png") center;
+        width: 500px;
+        height: 500px;
+        
+        resize: both;
+        overflow: auto;
+        }
+
+        .child {
+        padding: 0.5rem;
+        border-radius: 10px;
+        border: 2px solid white;
+        background: #fddb2c;
+        font-size: 1.5rem;
+        text-align: center;
+        }
+
+        .child:hover{
+            
+        }
+
+        body {
+        font-family: system-ui, serif;
+        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: 100vh; /* These two lines are counted as one :-)       */
+        background-repeat: no-repeat;
+        background-size: cover;        
+        background: lightgrey;
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../view/images/taxis_portada.png");
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="parent row mx-auto" >
+        <div class="child col-md-6 " contenteditable>
+            ¿Quiénes somos? 
+        </div>
+        <div class="child col-md-6 " contenteditable>
+            Pedir un servicio
+        </div>
+        <div class="child col-md-6 " contenteditable>
+            Contacto
+        </div>
+    </div>
+</body>
+</html>
