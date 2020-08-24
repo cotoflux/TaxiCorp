@@ -30,7 +30,7 @@
         }
 
         .child:hover{
-            
+            box-shadow: 0 15px 15px rgba(56, 98, 236, 0.25), 0 6px 6px rgba(0,0,0,0.30);
         }
 
         body {
@@ -47,17 +47,24 @@
         background-image: url("../view/images/taxis_portada.png");
         }
 
+        .talla{
+            width: 140px;
+            height: 140px;
+        }
 
     </style>
 </head>
 <body>
 
     <div class="parent row mx-auto" >
+        <div>
+            <img  class= "talla" src="./view/images/taxicorp-logo.png" alt="logo">
+        </div>
         <div class="child col-md-6 " contenteditable>
             ¿Quiénes somos? 
         </div>
-        <div class="child col-md-6 " contenteditable>
-            Pedir un servicio
+        <div class="child col-md-6 ">
+            <a href="./view/vistasHTML/indexPpal/inicio.html" alt="Pedir un servicio">Pedir un servicio</a>
         </div>
         <div class="child col-md-6 " contenteditable>
             Contacto
