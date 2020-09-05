@@ -3,71 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taxicorp</title>
+    <title>Taxicorp - home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <style>
-        .parent {
-        display: grid;
-        place-items: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("../view/images/taxicorp-logo.png") center;
-        width: 500px;
-        height: 500px;
-        
-        resize: both;
-        overflow: auto;
-        }
 
-        .child {
-        padding: 0.5rem;
-        border-radius: 10px;
-        border: 2px solid white;
-        background: #fddb2c;
-        font-size: 1.5rem;
-        text-align: center;
-        }
+<style>
+    .selector-for-some-widget {
+    box-sizing: content-box;
+    }
 
-        .child:hover{
-            box-shadow: 0 15px 15px rgba(56, 98, 236, 0.25), 0 6px 6px rgba(0,0,0,0.30);
-        }
+    img{
+        width: auto;
+        height: 200px;
+    }
 
-        body {
-        font-family: system-ui, serif;
-        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-        min-height: 100vh; /* These two lines are counted as one :-)       */
-        background-repeat: no-repeat;
-        background-size: cover;        
-        background: lightgrey;
-        display: flex;
-        align-items: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url("../view/images/taxis_portada.png");
-        }
-
-        .talla{
-            width: 140px;
-            height: 140px;
-        }
-
-    </style>
+    .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+    }
+    .row {
+        margin-top: 10px;
+    }
+    .navbar {
+        padding: 10px;
+        padding-left: 55px;
+    }
+</style>
 </head>
 <body>
+<header>
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">TaxiCorp</span>
+    </nav>
+</header>
 
-    <div class="parent row mx-auto" >
-        <div>
-            <img  class= "talla" src="./view/images/taxicorp-logo.png" alt="logo">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./view/images/cogerTaxi.jpg" class="card-img-top" alt="Solicitud de taxi">
+                <div class="card-body">
+                <h5 class="card-title">Solicitud de taxis</h5>
+                <p class="card-text"> En esta opción tenemos: </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#" class="card-link">Pedir un taxi</a> </li>
+                <li class="list-group-item"><a href="#" class="card-link">Finalizar la carrera del taxi</a></li>
+  
+                </ul>
+
+            </div>
         </div>
-        <div class="child col-md-6 " contenteditable>
-            ¿Quiénes somos? 
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./view/images/taxi.jpg" class="card-img-top" alt="taxis">
+                <div class="card-body">
+                <h5 class="card-title">Control Taxis</h5>
+                <p class="card-text"> En esta opción tenemos: </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item" ><a href="#" class="card-link">Alta de nuevo taxi</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Listado de taxis activos</a></li>
+                <li class="list-group-item"><a href="#" class="card-link">Modificar datos de un taxi</a></li>
+                </ul>
+
+            </div>
         </div>
-        <div class="child col-md-6 ">
-            <a href="./view/vistasHTML/indexPpal/inicio.html" alt="Pedir un servicio">Pedir un servicio</a>
-        </div>
-        <div class="child col-md-6 " contenteditable>
-            Contacto
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./view/images/cajas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Gestión de caja</h5>
+                <p class="card-text"> En esta opción tenemos: </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#" class="card-link">Ver la caja de un taxi</a></li>
+                </ul>
+
+            </div>
         </div>
     </div>
 </body>

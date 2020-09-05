@@ -92,7 +92,7 @@ div{
    transition: 2s ease;
 }
 .top h3{
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .icon1{
@@ -126,7 +126,7 @@ div{
 }
     </style>
     <script>
-      	   		function op() {
+      function op() {
 	   			var x = document.getElementById("img");
 	   			var y = document.getElementById("butt");
 	   			var z = document.getElementById("main-img");
@@ -143,14 +143,52 @@ div{
 	   				z.style.width = "100%";
 	   				x.classList.remove("mystyle");
 	   				y.onclick = function() {op()};
-				}
-	   		}
+				  }
+	   	}
+       function op2() {
+	   			var x = document.getElementById("img1");
+	   			var y = document.getElementById("butt1");
+	   			var z = document.getElementById("main-img1");
+	   			var w = document.getElementById("top1");
+	   			x.classList.add("mystyle");
+	   			y.onclick = function() {myFunction2()};
+	   			w.style.transform = "translateY(0)";
+	   			z.style.height = "270px";
+	   			z.style.width = "275px";
+
+	   			function myFunction2() {
+					w.style.transform = "translateY(75%)";
+					z.style.height = "100%";
+	   				z.style.width = "100%";
+	   				x.classList.remove("mystyle");
+	   				y.onclick = function() {op2()};
+				  }
+	   	}
+       function op3() {
+	   			var x = document.getElementById("img2");
+	   			var y = document.getElementById("butt2");
+	   			var z = document.getElementById("main-img2");
+	   			var w = document.getElementById("top2");
+	   			x.classList.add("mystyle");
+	   			y.onclick = function() {myFunction3()};
+	   			w.style.transform = "translateY(0)";
+	   			z.style.height = "270px";
+	   			z.style.width = "275px";
+
+	   			function myFunction3() {
+					w.style.transform = "translateY(75%)";
+					z.style.height = "100%";
+	   				z.style.width = "100%";
+	   				x.classList.remove("mystyle");
+	   				y.onclick = function() {op3()};
+				  }
+	   	}
     </script>
   </head>
 <body>
   
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="../../../index.html">
       <img src="../../images/taxicorp-logo.png" alt="Taxicorp logo" width="80" height="80" class="d-inline-block align-top">
     </a>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -171,67 +209,72 @@ div{
       </div>
 </nav>
 <header>
-  <h1>Bienvenidos a Taxi Corp</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores at nisi neque, iusto velit rerum temporibus hic officia animi libero incidunt sunt officiis sed molestias repellat exercitationem culpa, enim quia.</p>
-
-  <div class="row">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Bienvenidos a Taxi Corp</h1>
+      <p class="lead">Selecciona una de las opciones que tienes a continuación.</p>
+    </div>
+  </div>
+ </header>
+ <main>
+    <div class="row">
+      <div class="container col-md-3">
+        <h1 class="h1">Solicitud de Taxis</h1>
+      <div class="main">
+      <div class="card-my">	
+        <img class="img1" id="main-img" src="../../images/cogerTaxi.jpg">	
+        <div class="top" id="top">
+          <div class="button" id="butt" onclick="op()">
+            <div class="icon1" id="img"></div>
+          </div>
+            <h3>Solicitud de taxis</h3>
+            <p>Necestias pedir un taxi o finalizar la carrera del taxi en el que estas, entra aquí.</p>
+          </div>
+      </div>
+      </div>		
+      </div>
+    
   <div class="container col-md-3">
-  <h1 class="h1">Solicitud de Taxis</h1>
-  <div class="main">
-   <div class="card-my">	
-     <img class="img1" id="main-img" src="../../images/cogerTaxi.jpg">	
-     <div class="top" id="top">
-       <div class="button" id="butt" onclick="op()">
-         <div class="icon1" id="img">
-           
-         </div>
-         
-       </div>
-         <h3>Solicitud de taxis</h3>
-         <p>Necestias pedir un taxi o finalizar la carrera del taxi en el que estas, entra aquí.</p>
-     </div>
-   </div>		
+    <h1 class="h1">Control Taxis</h1>
+    <div class="main">
+    <div class="card-my">	
+      <img class="img1" id="main-img1" src="https://www.maxpixel.net/static/photo/2x/Identification-Car-Soon-Taxi-Local-Location-Plate-1581388.jpg">	
+      <div class="top" id="top1">
+        <div class="button" id="butt1" onclick="op2()">
+          <div class="icon1" id="img1">
+            
+          </div>
+          
+        </div>
+          <h3>Control de Taxis</h3>
+          <p>Para dar de alta un nuevo taxi, sacar un listado de taxis o modificar los datos de un taxi</p>
+      </div>
+    </div>		
+    </div>
   </div>
-</div>
-<div class="container col-md-3">
-  <h1 class="h1">Solicitud de Taxis</h1>
-  <div class="main">
-   <div class="card-my">	
-     <img class="img1" id="main-img" src="../../images/cogerTaxi.jpg">	
-     <div class="top" id="top">
-       <div class="button" id="butt" onclick="op()">
-         <div class="icon1" id="img">
-           
-         </div>
-         
-       </div>
-         <h3>Solicitud de taxis</h3>
-         <p>Necestias pedir un taxi o finalizar la carrera del taxi en el que estas, entra aquí.</p>
-     </div>
-   </div>		
+    </div>
+  <div class="row">
+    <div class="container col-md-3">
+      <h1 class="h1">Gestión de caja</h1>
+      <div class="main">
+        <div class="card-my">	
+          <img class="img1" id="main-img2" src="https://images.pexels.com/photos/9269/vintage-business-green-money.jpg?cs=srgb&dl=pexels-skitterphoto-9269.jpg&fm=jpg">	
+          <div class="top" id="top2">
+            <div class="button" id="butt2" onclick="op3()">
+              <div class="icon1" id="img2">
+                
+              </div>
+              
+            </div>
+              <h3>Gestión de caja</h3>
+              <p>Ver la caja realizada del taxi.</p>
+          </div>
+        </div>		
+      </div>
+    </div>
   </div>
-</div>
-<div class="container col-md-3">
-  <h1 class="h1">Solicitud de Taxis</h1>
-  <div class="main">
-   <div class="card-my">	
-     <img class="img1" id="main-img" src="../../images/cogerTaxi.jpg">	
-     <div class="top" id="top">
-       <div class="button" id="butt" onclick="op()">
-         <div class="icon1" id="img">
-           
-         </div>
-         
-       </div>
-         <h3>Solicitud de taxis</h3>
-         <p>Necestias pedir un taxi o finalizar la carrera del taxi en el que estas, entra aquí.</p>
-     </div>
-   </div>		
-  </div>
-</div>
-</div>
+</main>
 
 
-</header>
 </body>
 </html>
