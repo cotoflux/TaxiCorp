@@ -32,14 +32,18 @@
 </nav>
 
 <form action="../../../controller/Taxi_controlador.php" method="POST">
-  <input type="submit" class="button" name="select" value="Ver_Taxis" />
+  <input type="submit" class="button btn btn-primary" name="select" value="Ver Taxis" />
 </form>
+
+<h4>Listado de Taxis</h4>
+
+
 <?php
 
 if (isset($_GET['aParam'])) :
  foreach ($_GET['aParam'] as $key => $value):
   ?>
-  <p><?php echo($value['Modelo']); ?></p>
+  <p><?php echo($value['Matrícula']); ?></p>
     <?php
   endforeach;
 endif;
