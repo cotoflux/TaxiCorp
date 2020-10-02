@@ -35,15 +35,29 @@
   <input type="submit" class="button btn btn-primary" name="select" value="Ver Taxis" />
 </form>
 
+
 <h4>Listado de Taxis</h4>
 
+<table border=1 cellpadding=10>
+  <tr>
+    <th>Matrícula</th>
+    <th>Modelo</th>
+    <th>Apellidos</th>
+    <th>Ocupado</th>
+  </tr>
+</table>
 
 <?php
-
 if (isset($_GET['aParam'])) :
  foreach ($_GET['aParam'] as $key => $value):
   ?>
-  <p><?php echo($value['Matrícula']); ?></p>
+  <table border=1 cellpadding=10>
+  <tr><td><&nbsp><?php echo($value['Matrícula']); ?>&nbsp</td>
+      <td><&nbsp><?php echo($value['Modelo']); ?>&nbsp</td>
+      <td><&nbsp><?php echo($value['Apellidos']); ?>&nbsp</td>
+      <td><&nbsp><?php echo($value['Ocupado']);?> &nbsp</td></tr>
+
+  </table>
     <?php
   endforeach;
 endif;

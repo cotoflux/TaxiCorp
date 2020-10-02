@@ -15,7 +15,7 @@ class listadoTaxis{
         
     public function getTaxis(){
 
-        $consulta=$this->db->query("SELECT * FROM TAXIS");
+        $consulta=$this->db->query("SELECT * FROM `taxis` WHERE `Ocupado`=1");
         while($filas=$consulta->fetch(PDO::FETCH_ASSOC)){
             array_push($this->listadoTaxis, $filas);
         }
